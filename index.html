@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portafolio</title>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>	
+		<link rel="stylesheet" href="css/etalage.css" type="text/css" media="all"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	</head>
+	<body> 
+		<div class="header">
+			<div class="container">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" class="logo-h"></a>
+					<h1>Jocelyn <span>Lozano</span></h1>
+					<p>FRONT-END WEB DEVELOPER <span>DESIGN</span></p>
+				</div>
+			</div>
+			<label class="line"> </label>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="logo-bottom">
+					<a href="#"><img src="images/logo-1.png" class="logo-h2"/></a>
+				</div>
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li ><a href="#" class="scroll">Inicio</a></li>
+						<li><a href="#about" class="scroll">Acerca de mi</a> </li>
+						<li><a href="#study" class="scroll">Mis Habilidades</a></li>
+						<li><a href="#portfolio" class="scroll">Mis Trabajos</a></li>
+						<li><a href="#contact" class="scroll">Contactame</a></li>
+					</ul>
+					<script>
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500, function(){
+							});
+						});
+					</script>
+					<script type="text/javascript">
+						jQuery(document).ready(function($) {
+							$(".scroll").click(function(event){		
+								event.preventDefault();
+								$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+							});
+						});
+					</script>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="container">
+				<div class="about-us" id="about">		
+					<div class="about">
+						<h3>EL DISEÑO ES <span>MI PASIÓN</span></h3>
+						<p>Soy Estudiante de Laboratoria Perú, aprendiendo Desarrollo Web. Anteriormente estudié Marketing,  y he llevado cursos de Diseño Gráfico y Publicidad, de cada uno de ellos he aprendido algo diferente que ha ayudado en mi formación profesional.
+						Actualmente estoy en búsqueda de un empleo en el Sector Digital, en el área de UI/UX, como Front- end Developer.</p>
+						<img src="images/me.png" class="me"/>
+					</div>
+					<div class="about-grid">
+						<div class="col-md-4 grid-about">
+							<a href="#"><img src="images/in.gif" class="icon-1"/></a>
+							<h4>Diseño</h4>
+							<p>Creativa, y apasionada por los colores.</p>
+						</div>
+						<div class="col-md-4 grid-about">
+							<a href="#"><img src="images/co.gif" class="icon-1"/></a>
+							<h4 class="design">Front- end</h4>
+							<p>Aprendiendo sobre codigo cada día y con ganas de seguir creando.</p>
+						</div>
+						<div class="col-md-4 grid-about">
+							<a href="#"><img src="images/pe.gif" class="icon-1"/></a>
+							<h4 class="set">Mamá</h4>
+							<p>De Jade y Kimy, mellizas, a punto de cumplir 4 y exploradoras al 100%.</p>
+						</div>
+						<div class="clearfix"> </div>				
+					</div>
+				</div>
+			</div>
+			<div class="bottom-grid">
+				<div class="container" id="study">
+					<div class="portfolio-top">
+						<h3 class="colorBlanco">MIS HABILIDADES</h3>
+					</div>
+				    <div class="container-fluid ">
+				    	<div class="row text-center pd">
+					        <div class="col-xs-12 col-sm-6 col-md-3">
+					          <img src="images/html.png" alt="" class="tamanoimg">
+					        </div>
+					        <div class="col-xs-12 col-sm-6 col-md-3">
+					          <img src="images/css.png" alt="" class="tamanoimg">
+					        </div>
+					        <div class="col-xs-12 col-sm-6 col-md-3">
+					          <img src="images/js.png" alt="" class="tamanoimg">
+					        </div>
+					        <div class="col-xs-12 col-sm-6 col-md-3">
+					          <img src="images/jq.png" alt="" class="tamanoimg">
+					        </div>
+				    	</div>
+				    	<div class="row text-center pd">
+					        <div class="col-xs-12 col-sm-6 col-md-3">
+					          <img src="images/bs.png" alt="" class="tamanoimg">
+					        </div>
+					        <div class="col-xs-12 col-sm-6 col-md-3">
+					          <img src="images/sass.png" alt="" class="tamanoimg">
+					        </div>
+					        <div class="col-xs-12 col-sm-6 col-md-3">
+					          <img src="images/ps.png" alt="" class="tamanoimg">
+					        </div>
+					        <div class="col-xs-12 col-sm-6 col-md-3">
+					          <img src="images/ill.png" alt="" class="tamanoimg">
+					        </div>
+				    	</div>
+				    </div>
+			    </div>		
+			</div>
+			<div class="container">
+				<div class="portfolio" id="portfolio">
+					<div class="portfolio-top">
+						<h3>MIS<span> TRABAJOS</span></h3>
+						<p>Estos son algunos de los landing pages que he trabajado en Laboratoria, dentro de los 5 meses que llevo estudiando, los cuales llevan HTML5, CSS3 y Javascript.</p>
+					</div>
+					<div class="container-fluid">
+					    <div class="row text-center">
+					        <div class="col-xs-12 col-sm-12 col-md-4 dtb">
+					        	<dl class="grid cs-style-3">
+					            	<dt>
+					            		<figure>
+								        	<img src="images/trello.png" alt="trello" class="fit">
+								            <figcaption>
+									            <h3>Trello</h3>
+									            <span>Organizador de Tareas</span>
+									            <a id="codigo" href="https://github.com/jocelynlozano/trelloVs3" target="_new31">Github</a>
+									            <a id="demo" href="https://jocelynlozano.github.io/trelloVs3/" target="_new">Demo</a>
+								            </figcaption>
+					            		</figure>
+					          		</dt>
+					        	</dl>
+					        </div>
+					        <div class="col-xs-12 col-sm-12 col-md-4 dtb">
+					        	<dl class="grid cs-style-3">
+					            	<dt>
+						            	<figure>
+							                <img src="images/danza.png" alt="danza" class="fit">
+							                <figcaption>
+							                  <h3>Escuela de Danza</h3>
+							                  <span>Web Responsive</span>
+							                  <a id="codigo" href="https://github.com/jocelynlozano/escueladedanza" target="_new35">Github</a>
+							                  <a  id="demo" href="https://jocelynlozano.github.io/escueladedanza" target="_new5">Demo</a>
+							                </figcaption>
+						            	</figure>
+					            	</dt>
+					          	</dl>
+					        </div>
+					        <div class="col-xs-12 col-sm-12 col-md-4 dtb ">
+					        	<dl class="grid cs-style-3">
+									<dt>
+					        			<figure>
+							                <img src="images/maquina.png" alt="maquina" class="fit">
+							                <figcaption>
+							                  <h3>Maquina Ramdon</h3>
+							                  <span>Juego de Colores</span>
+							                  <a id="codigo" href="https://github.com/jocelynlozano/maquina" target="_new32">Github</a>
+							                  <a id="demo" href="https://jocelynlozano.github.io/maquina/" target="_new2">Demo</a>
+							                </figcaption>
+					              		</figure>
+					            	</dt>
+					          	</dl>
+					        </div>
+					    </div>
+					    <div class="row text-center pmt">
+					        <div class="col-xs-12 col-sm-12 col-md-4 dtb ">
+					        	<dl class="grid cs-style-3">
+					           		<dt>
+					            		<figure>
+						        			<img src="images/random.png" alt="random" class="fit">
+								            <figcaption>
+								                <h3>Colores</h3>
+								                <span>Juega con colores random</span>
+								                <a id="codigo" href="https://github.com/jocelynlozano/random" target="_new34">Github</a>
+								                <a id="demo" href="https://jocelynlozano.github.io/random/" target="_new4">Demo</a>
+							              </figcaption>
+					            		</figure>
+					          		</dt>
+						        </dl>
+						    </div>
+					        <div class="col-xs-12 col-sm-12 col-md-4 dtb">
+					        	<dl class="grid cs-style-3">
+					        		<dt>
+					            		<figure>
+								        	<img src="images/republica.png" alt="republica" class="fit">
+								        	<figcaption>
+					                			<h3>La Republica</h3>
+								                <span>Pagina Web Responsive en Squad</span>
+								                <a id="codigo" href="https://github.com/fatimajr/larepublica" target="_new33">Github</a>
+								                <a id="demo" href="https://fatimajr.github.io/larepublica/" target="_new3">Demo</a>
+					              			</figcaption>
+					            		</figure>
+					          		</dt>
+						        </dl>
+						    </div>
+					        <div class="col-xs-12 col-sm-12 col-md-4 dtb">
+					        	<dl class="grid cs-style-3">
+					            	<dt>
+					            		<figure>
+					              			<img src="images/cinema.png" alt="img04" class="fit">
+					              			<figcaption>
+								                <h3>Cinemax</h3>
+								                <span>Pagina Web</span>
+								                <a id="codigo" href="https://github.com/jocelynlozano/cinema" target="_new36">Github</a>
+								                <a id="demo" href="https://jocelynlozano.github.io/cinema" target="_new6">Demo</a>
+					              			</figcaption>
+					            		</figure>
+					          		</dt>
+						        </dl>
+						    </div>
+					    </div>
+			   		</div>		
+				</div>
+			</div>
+				</div>
+		<div class="study-case" id="study">
+			<b class="in-line"> </b>
+			<b class="in-line line-in"> </b>
+		</div>
+			<div class="contact" id="contact">
+				<div class="contact-bottom">
+					<div class="container">
+						<h3>CONTACTAME</h3>
+						<ul class="social">
+							<li><a href="#"><span> </span></a></li>
+							<li class="been"><a href="#"><span> </span></a></li>
+							<li class="angle"><a href="#"><span> </span></a></li>
+							<li class="vimeo"><a href="#"><span> </span></a></li>
+							<li class="facebook"><a href="#"><span> </span></a></li>
+							<li class="twitter"><a href="#"><span> </span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
