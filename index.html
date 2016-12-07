@@ -14,6 +14,8 @@
 		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 		<script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type='text/javascript' src='js/sweetalert-dev.js'></script>  
+    	<link rel="stylesheet" href="css/sweetalert.css">
 	</head>
 	<body> 
 		<div class="header">
@@ -21,12 +23,17 @@
 				<div class="logo">
 					<a href="#"><img src="images/logo.png" class="logo-h"></a>
 					<h1>Jocelyn <span>Lozano</span></h1>
-					<p>FRONT-END WEB DEVELOPER <span>DESIGN</span></p>
+					<p>FRONT-END WEB DEVELOPER <span>DESIGNER</span></p>
+				</div>
+				<div class="text">
+					<a href="#abajo">
+						<span class="glyphicon-hand-down"></span>
+					</a>	
 				</div>
 			</div>
 			<label class="line"> </label>
 		</div>
-		<div class="header-bottom">
+		<div class="header-bottom" id="abajo">
 			<div class="container">
 				<div class="logo-bottom">
 					<a href="#"><img src="images/logo-1.png" class="logo-h2"/></a>
@@ -96,29 +103,27 @@
 				    	<div class="row text-center pd">
 					        <div class="col-xs-12 col-sm-6 col-md-3">
 					          <img src="images/html.png" alt="" class="tamanoimg">
+								<div class="contenedor-botones text">
+									<a class="btn btn-primary">HTML5</a>
+								</div>
 					        </div>
 					        <div class="col-xs-12 col-sm-6 col-md-3">
 					          <img src="images/css.png" alt="" class="tamanoimg">
+					          <div class="contenedor-botones text">
+									<a class="btn btn-primary">CSS3</a>
+								</div>
 					        </div>
 					        <div class="col-xs-12 col-sm-6 col-md-3">
 					          <img src="images/js.png" alt="" class="tamanoimg">
+					          <div class="contenedor-botones text">
+									<a class="btn btn-primary">JAVASCRIPT</a>
+								</div>
 					        </div>
 					        <div class="col-xs-12 col-sm-6 col-md-3">
 					          <img src="images/jq.png" alt="" class="tamanoimg">
-					        </div>
-				    	</div>
-				    	<div class="row text-center pd">
-					        <div class="col-xs-12 col-sm-6 col-md-3">
-					          <img src="images/bs.png" alt="" class="tamanoimg">
-					        </div>
-					        <div class="col-xs-12 col-sm-6 col-md-3">
-					          <img src="images/sass.png" alt="" class="tamanoimg">
-					        </div>
-					        <div class="col-xs-12 col-sm-6 col-md-3">
-					          <img src="images/ps.png" alt="" class="tamanoimg">
-					        </div>
-					        <div class="col-xs-12 col-sm-6 col-md-3">
-					          <img src="images/ill.png" alt="" class="tamanoimg">
+					          <div class="contenedor-botones text">
+									<a class="btn btn-primary">JQUERY</a>
+								</div>
 					        </div>
 				    	</div>
 				    </div>
@@ -237,17 +242,55 @@
 				<div class="contact-bottom">
 					<div class="container">
 						<h3>CONTACTAME</h3>
-						<ul class="social">
-							<li><a href="#"><span> </span></a></li>
-							<li class="been"><a href="#"><span> </span></a></li>
-							<li class="angle"><a href="#"><span> </span></a></li>
-							<li class="vimeo"><a href="#"><span> </span></a></li>
-							<li class="facebook"><a href="#"><span> </span></a></li>
-							<li class="twitter"><a href="#"><span> </span></a></li>
-						</ul>
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-1 mgt"></div>
+							<div class="col-xs-12 col-sm-6 col-md-2 mgt">
+								<div class="text mgb">
+									<img class="icon icons8-Briefcase" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABiElEQVRoQ+2Z61HDQAyEv1QAHQAdQAeUQAlQASWQVAAdQCl0AB1AKgAqICOP4zHEyZx0spJ4dL/12t2zxtLNmMiZTQQHCWRAyUfgBjgvVPkTeAEWhfY7zbwUeQLujQUJkLnRt3PzAvIFnAJXwHthUZfAGyDKXBT6bDXzAvLbZtDGs/ptANIm3saItSCr3/SBaDtO7ZX28u86n1ytmo7jVVBtnIUAsXSc2sRe/l3nEyBuH5xXdco4Tf0JRMnamOapyJjsWmKnIhbWxvRJRcZk1xI7FdGwdg08tw53wKvGudA2RJGP3gzvMgkOgAsB8g2ctMmXisVEoRiNWQgQuVqyKZFze8xXS8Os1XZDEc0GxJrU2289j/z5jfdOEhqvP4/89D7M0CIqknU152BVwaK3a0j79S56KF4CiWBZkyMV0bAVYZuKRLCsyZGKaNiKsE1FIljW5JieIuu5+pgHq6X8xstj/YNGywO0bZ7e5AgYWQ6cHWCRu0qSzYwsN+Ze7+x7x59A9i7BvwJWu8Bo0pV4GaEAAAAASUVORK5CYII=" width="60" height="60">
+								</div>
+								<div class="contenedor-botones text">
+									<a href="documents/cvJocelynLozanoCarbajal.pdf" class="btn btn-primary" target="_blank">Descarga mi Cv</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-2 mgt">
+								<div class="text mgb">
+									<img class="icon icons8-LinkedIn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADTklEQVRoQ+2ajW0UMRCFXyqADkgqACoAKoBUAFQAVABUAFQAqQCoAKiApAKgAqAC0LfyOzk+/91Jt96T1tJJudi7N2/ezHhm7BOVx2NJ9yXdCZ/K0oNPXUri81XSRe7XTjL/fCTpjaTTg4u33w/8lPRC0qf48RQIAJ6HBVeSPgQtoI2RA6vAOp5Iuh0EeRsATV9jIEw8k/RX0itJfF/iQNHId0PSOyveQDCnjwEEyEcz0FIgDH0Pi84xMwP5EXwC21sqEyk4mMEV8JkzgGB37yXhEyA9poHl4DPnAMGhCbXHxIaVbVYuAIKtwcTdim8AlIfMGJrABLMxfUZK7SuXAPkXfji3pzCF2WF+uQGbT2cUPPdTk/wtIKaOkMzf3oSIcjBCCAQIgEaNLiA2uynEJZI6SGBmmOWo0QWkZnY3Jf1umOUc4LqA/AnmcxbidSwYuRj7D2YHqFGjC4hDM2aFecWDTABfIXKVgsEc4LqAoHV8AKdmB42dnTnYIAQyN2p0AUE4BAXArUTSX4GR0XlZNxDLTzLJh4HwaRRbNCMOvzUh7T+7rEUhD6MKlPcTWKygzzuYaxcjDr8tbccba2stwAkStQEoNtzXrZc5M2nt7K30JZ7vXYtsBAkEBZR9jBAOU4Akt7MJPwhslTDtxEgpD9sHCOUCAqP10iDA0GggWuZCf/zc7ECs+RYICxmH/lo+NzuQDnPfWuJ8bqoCCy8YBuRlyATQOAKSPdBEKJkaa9jDcokr2IYAKYVozK7k1HRMAL/pmCTMzA7EtU2cEcAKzkzdTahF6HTgU18kfYs25KHObjZSx3UrqlTXuFwo+cnsjNT2md49KLcNrEC27LOj9t9El6RN63etjIwIv6uPNHpvq7Ovzh40UNwLChGtK+KNKKxWILU9aGUk2Ps+pe7BTMvHV7mDnkN0UWpAWlVk+qwPeq5aR280AO413k4PilR8l7XpK/d99trR21LOOVps5OY35zemynXxMR2IxhXnaXphgAYAtfPoxnSLneKFAR70FQ7AUDtT7C9xcM3Elxq2rnBYYIPhO6zQqqHoH80QDBB08GcfkV/rqpSuOQEoPQ9ZCjt0YeIT5kmuUk+XOdD74pmvFo0CQ7/YF8+yR+H/AYrjVKF+BQRhAAAAAElFTkSuQmCC" width="60" height="60">
+								</div>
+								<div class="contenedor-botones text">
+									<a href="https://pe.linkedin.com/in/jocelynlozanocarbajal" class="btn btn-primary" target="_blank">Visita mi Linkedin</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-2 mgt">
+								<div class="text mgb">
+									<img class="icon icons8-GitHub" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAFd0lEQVRoQ92aj7EMQRDG+0WACDwRIAJEgAgQASJABIgAESACRIAIEAEioH5b853evtmZ3tk7Xpmqq3fvbqanv+6v/8zsndh/Mk4OiOO8md00s1Mzu17+8t6Pr2bG6335+9bMfhxCh61AUP6Omd01syuDCn0ys2dmtgnUKBAsDYAHZgYYDZRBMSyOpXnvB2CZj8d4jwc1mA+gV8Vbq+wyAuRRAIDyb8zs5aqd/0zGm7yulY8A9NjMnq+RtwYIXnjtKAQAPALnDzGQj0fkJbx5Oys/C+SWmb0otPhWLAh9jjGgHd69WOh5r3i8uVcGCG4HBAP+4oWDZJqGZsQR3iEOGYBpUrcHxIN4WIQfwwtLMjHa0wyYFhDoREykLHJEdN6YxAyJZW8sASHwPpaY+BeeiIrKM1D6ai0BLAEBBHmemMAiZ2EQI8QM2Qwws1EDQg6nVpCdABMD23uLzIVgcv5oGiZLkXJVJJGDonFfEgB7kc32WBKBeCVvlAodwcsytc/Z4LKZEV+q4mpdUELVHp5/LjEIgDgwDHSKg7nvipwZxSIQeYNihzK18cslABRjntLkCAV/lgAGHKBhQ5U+RTjz8OCT0gFMH3sguO5LCfBLDaoIiF+LJ/EUbQaW5r33AHv5PgvweC7WJeSgQ9TNG0hzMCJ6ThT0yigztLzBmhoQbcQm2VipzZWSeMk3o9HTxCZG2xVKD0SZqldFsTTWhKOxux2hll+jGPhQgn9JnmrLjoICAvrvZtazBIIV7D3AI6DEiqVg9zLFjAvQS0CEsEcrBNED3S8pt5ZZRgBojQI5U4RFr6naC4iUm2WCikaZ9LwFiNoi4oxAbg1l2ElnARG6pdohgVp8zIq/F8gLaGbxJCCkPKzdC2AlhMXmbYs7ytoszUnn6DN5T0BaKbUWYL32fwseKdjLXLNScBaB9GpV1bBnEUi2ljQ94hu42MxRfHSoabUwW2jFWmUu3XfFSz61PszVvcGJPELA0B7TJ9G71O6kKJpsUm2jt2rv1qvgoovux7x49WzoQ4fBceO0ln4Bcc61CFqIMKyjHql2ZtiKxzeN3vK6apUX1IHQ0k9JIRZEJoKQhRLkhfA9tYSGDcvRphxqYGEU08nU35rwnc41uleGGYxZQczmbnkFkHiNzWgntl4P+cu/pZNpNJjamVmLoqaRyVMT1jEz1oG/gGEuPdfIJXS8QyYuiMPeUWBPX1/Y1J7Hqq22BMVxozIFYPAIAaeBlXSJDY9jm6/7XZ3P/SkUQ8CMnhHZSwwC+EQ5D0Rfoig9l4aCX//H9p11eMQDWhM3AKBpXXMFSyxhjOrBCnfhUujiey5PIylY67X0gCcDijjA03rgswa4CiYeZ8+9o64yEod/KIKyGv62j89qV/96YqVsAw15L77zPXJ0BTraeHL7CSUXLx9iRoobqWiSt8X1JUu2zjU6BWbOHFG+qv7MGzFGtEjBHS/KfAxJ0RqgqdJ2uJI9c3gxeJS2HdndCzotVAbzFPMxBGUA49Ok8nrmLL+mbkknUWqXqTzK1iW2ip6niQKtZfBMQ+nvpqhbvSGWQCmSz16dGXmsgCB4Dl/JcHFkD13Zw9ymxwq1bIVV8M7SyCqm9Zn5ZDjd1DQpm7GetwhxgMBa9c0o5o3Qmk888rhPlb8bdxkgbI5AAhwqwU8Ex0p8KCDEISCII2ICQ1afUmWCvUYfBCNQrUjsvbYCAQDFWCfTbAM56Zr1iAdGrMBbBTqA8JYqelamgOsHAwKAF9iD/is9sptGgXhHzWLMXOqhat0vGU+nT+b5wXyU55XpgGeLR4FIiM7xmUZxybpQCOWh7WoAEroViFfO/1gmHkc1T8doPXusXS6k6TQa7EMb/K1FvwGDeIxCt/G8bAAAAABJRU5ErkJggg==" width="60" height="60">
+								</div>
+								<div class="contenedor-botones text">
+									<a href="https://github.com/jocelynlozano" class="btn btn-primary" target="_blank">Mira mi GH</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-2 mgt">
+								<div class="text mgb">
+									<img class="icon icons8-Phone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADzklEQVRoQ82a65lMQRCGv42ADBABIkAEbARsBIgAESACRLBEgAjYCBABIuB55+nap7S+nulz+vSfvUzPTL1dX126Zk5UXg8kPZN0S9J3SS8kva08Z8rDJ5l3vSrppaRHicfvSfo0xdrCm6ZAgPgYvPBb0nNJryQ9CXB45rakX3uCiUGQEBDAXASPfHUG8/tNSe8lne4VJIa4mzj165K+BQBAANrFMo9g4JfgiXdBRjnpIDUSAI/f2IvEAPEx8UESmaq2TGKvA3Rt/+qPA0IgPw4xkZJTyghkiAdZu8higKB5pNVrkElsF1kMkD/hZHM1pSSL3UgM4znRayFw+b1n7UZigFCl74S6sCSdeomRxaYsQMyQYzKQyROQXq8OAQfE5IEBS06U9P3ziDgbBsILWZz0Zi6eaz3YZ0mk7ynLMpXJi6qe6nhzxuEN0jc/lxzCMGgD8fLo0bkdwFRvcBq+dnBheiip1Su+gZzqjRjEG8Z9w7fvKQmch76sFXyYjFIvFFdzkwq1hVPOLV8Ie6S4GkwMQqyQwa5IehoaytSbt+5bzfD4hVP9FW08suG+gcRyBc728Zq7ihEPSatyP7QvJYn5Sxb7anG1modKUxSMoplkBITBuWXZjv3ATBlKlFp3qjSDiJp0iBeSA0OJaTC1O4iXTilepsPUQPCGxUvttKlD7CHj1fYOj5UWEH/atXkW9QWZAcNPRkabxEwLCKfnT5vgPqsUS4PZzDOtINjtT7tULOO9m8D0gGAgLf6b4A28UprMe/AeGKRsCmiOpV6QXhgMIq4sNQOfK5p0CszX7HJGR8H+psn/EpBeGJ8sCHwSgDcOwxnB5m6XDBApysWksRRkCQwGcd9hUZ9o/wGwGykfYXBtNrlaDWN/1TvHgPTCGADGx4sTBzQ+deIMMKTJynrnWJAlMEiIuKHWMDTHC7URUtU7I0BiGAxjRlZaSzJT0TujQGKYWtFsTquJjUnvjAQxGHSMbJAP6XONFiX2ztlokFRVJ93WYmCphy7nzmuAYJQvhKnasdTw1PMOc+e1QHhtAppY4cpsqZc0O3LZuPZiTRAz2AcnFZ24GSE1/yn06RYgAPnagdSAq6XoWvrmM0wkfBgQbgWSkhre4TrQO3nxn0LzpYbDB7hbgtgJ0+WSopnQsIgjYqdVblwj6M9+hDvSIb3PADHvEKi+76LuILdc2x5/RwZPXHpzFoh5B40TL9YV8388AxRASIe/MZpvKxHgdMn/QMz0SBzInDZywUsmuVSwA4Y0/5PhbI+kjOXUMZZTx2OAEQ94Ce8lW56/3Kz8kbqDE54AAAAASUVORK5CYII=" width="60" height="60">
+								</div>
+								<div class="contenedor-botones text">
+									<a href="#" class="btn btn-success">960527339</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-2 mgt">
+								<div class="text mgb">
+									<img class="icon icons8-Mailbox-Opened-Flag-Down" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAB10lEQVRoQ+2X/THFUBDFf68CStABOqADKqAEKqADOkAHVIAK6IASqIA5b25Mkpdk9maTvEzszry/3t2Ps+fs3twVC7HVQnAQQObGZDASjIzUgZDWSI3tHfbfM3IEnAEH6de7kwbHd0C/B+Cl7XwuIyr8BhCQbZiAXCZglfw5QATiGdgFvoFb4LEUVP+fABfADvAFHDclzeyAKa4VSBmEKFaxKrTJBFQgJT2dOQQ+M4u3xK00yQpETEhOAnFuLOo+gZEclHQoa4xrASIAAiI57XUwUS9UzIgJyUysaGCHsHJcNWi9ACxAig5oyCSZHLsGrjKZtMTfiGsB8pZWbJ+uarbk/9qw6cT0Xar6NJOxIq5YVl0mRn5SMgvopm62+X8kqVoYKM6Ua6jEtRQ3FhBtNM1Pjs0SiKSl+ZPp/mlaBkUTZ82IhYkAkjOslo7qjGfGFsNIV7Nms7WsjLadCyCWO2eMGQtG6h3wbB3v1ophH0PjXkYHm5FB16Q3WMk/e/16c0/OSPGA8hY+tf/6WijfDfqM3p+6Cme+p/QEML0Qnbk23OtSG0R6fW9rD7gA0tW9YMShrZBWSMshH/NXq/NN/5cnht3B1mKG3dGDdtdtSCuAzG39jsLILyjtgjM80y27AAAAAElFTkSuQmCC" width="60" height="60">	
+								</div>
+								<div class="contenedor-botones text">
+									<a href="#" class="btn btn-success">jocelynlozanocarbajal@gmail.com</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-1 mgt"></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script  type='text/javascript' src='js/sweetalert.min.js'></script>
 	</body>
 </html>
+
