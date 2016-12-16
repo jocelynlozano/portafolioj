@@ -15,6 +15,11 @@ body{
 	min-height: 10em;
 	margin: 0 auto;
 }
+
+.letra-h3{
+	font-family: 'Roboto Slab', serif;
+	color: #FE9A2E;
+}
 .logo-h2{
 	width: 4em;
 	min-height: 4em;
